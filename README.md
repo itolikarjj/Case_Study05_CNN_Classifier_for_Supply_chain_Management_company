@@ -1,11 +1,15 @@
-Problem Description To develop an image classifier model which can recognize vegetable item(s) in a photo and identify them for the user
+**Problem Description** 
+To develop an image classifier model which can recognize vegetable item(s) in a photo and identify them for the user
 
 The classifier model used images data-set scraped from Google, with 4 labeled classes- Onion, Potato, Tomato and Indian-market.
-Company background : Company E is India’s largest fresh produce supply chain management company, with pioneering work ongoing on solving one of the toughest supply chain problems of the World with innovative solutions. Their work includes sourcing of fresh produce from farmers and delivering to businesses within 12 hours. An important piece of this workflow is development of robust classifier models which can distinguish between images.
 
-Business goals : The company E wants to build a robust model with multi-class classification functionality for 4 different classes- Onions, Tomato, Potato and Indian-market (Noise). The deploy-ready solution must have acceptable accuracy levels for the CNN model for the test and training sets.
+**Company background**
+: Company E is India’s largest fresh produce supply chain management company, with pioneering work ongoing on solving one of the toughest supply chain problems of the World with innovative solutions. Their work includes sourcing of fresh produce from farmers and delivering to businesses within 12 hours. An important piece of this workflow is development of robust classifier models which can distinguish between images.
 
-Methodology :
+**Business goals**
+: The company E wants to build a robust model with multi-class classification functionality for 4 different classes- Onions, Tomato, Potato and Indian-market (Noise). The deploy-ready solution must have acceptable accuracy levels for the CNN model for the test and training sets.
+
+**Methodology**:
 
 -Import the dataset, verify the count of Images in each train and test folders for each class
 
@@ -19,9 +23,9 @@ Methodology :
 
 -Review the performance of the model- consider batch Normalization, dropouts, Data augmentation and other technique to select best model
 
-Tracking Model performance:
+**Tracking Model performance:**
 
-97% validation accuracy and 88% test accuracy achieved with mentioned setup
+97% validation accuracy and 88% test accuracy achieved with RESNET50 transfer learning model
 Closer look at the other performance parameters suggests further fine-tuning required for the CNN model.
 Lower precision and Recall indicate the necessity of adding few more convolution layers, more data augmentation and
 per-class evaluation of metrics to understand the model behavior.
